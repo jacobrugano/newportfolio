@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Maina - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;   /* To set the font for the body*/
+            margin: 0;/* To remove margins for better spacing */
+            padding: 0;/* To remove margins for better spacing */
+            background-color: #f4f4f4;/* */
+            color: #333;/* To set the color of the texts in the body*/
+        }
+        header { /* A css selector targeting the header */
+            background-color: #003366; /* sets the background color of the header area */
+            color: #fff;/* Color of the header */
+            padding: 20px 0;/* sets the top and bottom padding of the header to 20 pixels and sets the left and right padding to 0 */
+            text-align: center;/* centers the text within the header */
+        }
+        .container { /*a CSS class selector targets the entire class "container" for me to style it.*/
+            display: flex;
+            max-width: 1200px; /*Sets the maximum width of the container to 1200 pixels.*/
+            margin: 20px auto; /*Sets the top and bottom margin to 20 pixels and horizontally centers the container*/
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Was adding a subtle box shadow*/
+            border-radius: 8px; /*To set the round corners to 8pixels*/
+            overflow: hidden; /*Ensures that any content overflowing the container is hidden, preventing it from affecting the layout.*/
+        }
+        .sidebar {
+            flex: 0 0 25%; /*Ensures that the sidebar does not grow or shrink, and its initial size is 25% of the container width.*/
+            background-color: #003366;
+            color: #fff;
+            padding: 20px; /*Sets 20 pixels of padding to the sidebar, providing spacing between its contents and the edges.*/
+        }
+        .main-content {
+            flex: 1; /*Sets the flex-grow property of the main content area to 1, allowing it to grow and occupy the remaining space within the container.*/
+            padding: 20px; /*Sets 20 pixels of padding to the main content area, providing spacing between its contents and the edges.*/
+        }
+        h1, h2, h3 {
+            text-align: center; /* Centers the text within <h1>, <h2>, and <h3> elements. */
+        }
+        .about {
+            margin-bottom: 20px;
+            text-align: justify; /* Aligns the text evenly along both the left and right edges. */
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project {
+            width: calc(50% - 10px); /* Sets the width of each project element to 50% of its parent container minus 10 pixels, providing spacing between them. */
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jacob Maina</h1>
+    <p>Student at United States International University | Upcoming Software Developer</p>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>🚀 HTML/CSS: Creating beautiful and responsive web interfaces.</li>
+                <li>💻 JavaScript: Building interactive and dynamic web applications.</li>
+                <li>🐍 Python: Automating tasks and developing data-driven solutions.</li>
+                <li>☕ Java: Creating robust and scalable backend systems.</li>
+                <li>📊 SQL: Managing and analyzing databases efficiently.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>📚 Reading: Exploring new worlds and gaining knowledge.</li>
+                <li>⛰️ Hiking: Embracing nature and enjoying scenic views.</li>
+                <li>📷 Photography: Capturing moments and expressing creativity.</li>
+                <li>✈️ Traveling: Discovering Maasai cultures and experiences.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Email: jacob.maina@gmail.com</p>
+            <p>Phone: +254717305705</p>
+            <p>LinkedIn: <a href="#">jacobmaina</a></p>
+            <p>Facebook: <a href="#">jacobmaina</a></p>
+            <p>Twitter: <a href="#">jacobmaina</a></p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="about section">
+            <h2>About Me</h2>
+            <p>
+                My name is Jacob Maina, and I'm a student at United States International University, training on software development focusing on all programming languages. I hold a first degree in Projects Planning and Management from Moi University. As a junior upcoming developer, I've developed several projects, the screenshots of which you can find below.
+            </p>
+        </div>
+
+        <div class="projects">
+            <div class="project">
+                <img src="project1-screenshot-link" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <img src="project2-screenshot-link" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <div class="project">
+                <img src="project1-screenshot-link" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <img src="project2-screenshot-link" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <!-- Add more project sections as needed -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
