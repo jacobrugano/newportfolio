@@ -51,15 +51,15 @@
         }
         .project {
             width: calc(50% - 10px); /* Sets the width of each project element to 50% of its parent container minus 10 pixels, providing spacing between them. */
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /*Adds a bottom margin of 20 pixels to elements with the class "project", providing space between each project section.*/
+            padding: 20px; /* same */
+            background-color: #f0f0f0; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a box shadow effect to elements with the class "project", creating kind of a separation from the background.*/
             border-radius: 8px;
         }
         .project img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Sets the width of images inside the class "project" to 100% of their container's width, ensuring they fill the available space. */
+            height: auto; /* Allows images to maintain their aspect ratio when resizing, preventing distortion especially coz I am posting different sized images. */
             border-radius: 8px;
             margin-bottom: 10px;
         }
@@ -100,7 +100,7 @@
                 <li>📚 Reading: Exploring new worlds and gaining knowledge.</li>
                 <li>⛰️ Hiking: Embracing nature and enjoying scenic views.</li>
                 <li>📷 Photography: Capturing moments and expressing creativity.</li>
-                <li>✈️ Traveling: Discovering Maasai cultures and experiences.</li>
+                <li>✈️ Traveling: Discovering different cultures and experiences.</li>
             </ul>
         </div>
         <div class="section">
@@ -117,32 +117,41 @@
         <div class="about section">
             <h2>About Me</h2>
             <p>
-                My name is Jacob Maina, and I'm a student at United States International University, training on software development focusing on all programming languages. I hold a first degree in Projects Planning and Management from Moi University. As a junior upcoming developer, I've developed several projects, the screenshots of which you can find below.
+                My name is Jacob Maina, and I'm a student at United States International University, 
+                training on software development focusing on all programming languages. I hold a 
+                first degree in Projects Planning and Management from Moi University. As a junior upcoming developer, 
+                I've developed several projects, the screenshots of which you can find below.
             </p>
         </div>
 
         <div class="projects">
             <div class="project">
-                <img src="project1-screenshot-link" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
+                <h3><a href="#">Family Tree Prolog</a></h3>
+                <img src="prolog.png" alt="Project 1">
+                <p>Family Tree using Prolog: This is a knowledge base that includes facts 
+                    and relationships about your family, extending to a minimum of four generations . 
+                    The rules include who are : siblings(); father(); mother(), implemented as a Family 
+                    Tree in Prolog. The program  answers queries such as: mother(X, Y); siblings(X,Y);</p>
             </div>
             <div class="project">
-                <img src="project2-screenshot-link" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
+                <h3><a href="#">Area of a shape.</a></h3>
+                <img src="area.png" alt="Project 2">
+                <p>A python program that calculates the Area of a Shape. 
+                    The program prompts the user to choose the shape, and then enter 
+                    the required variables. If a user chooses a circle shape, then the program
+                     prompts for the radius. Once the user enter the radius, the program then calculates 
+                     and displays the area.  The program is implemented in python programming languages.</p>
             </div>
             <div class="project">
-                <img src="project1-screenshot-link" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
+                <h3><a href="#">Student grading program</a></h3>
+                <img src="grading.png" alt="Project 1">
+                <p>This is a Grading Program that takes marks as input and awards 
+                    the appropriate grade based on USIU's grading system. It has the  
+                    necessary control statements. The program continues taking marks input 
+                    from the user and displays the appropriate grades, and terminate Only upon 
+                    the user's command.</p>
             </div>
-            <div class="project">
-                <img src="project2-screenshot-link" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-            </div>
-            <!-- Add more project sections as needed -->
+
         </div>
     </div>
 </div>
